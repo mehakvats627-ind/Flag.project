@@ -1,2 +1,80 @@
-# Flag-project
-Using CSS positioning to create a flag of laos.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laos Flag</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+  <h1> Flag of Laos </h1>
+  
+  <div class="flag">
+    <div class="stripe red"></div>
+    <div class="stripe blue">
+      <div class="circle"></div>
+    </div>
+    <div class="stripe red"></div>
+  </div>
+  
+</body>
+
+
+</html>
+
+
+
+
+
+<style>
+
+h1 {
+  font-family: 'Tagesschrift', sans-serif;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #db87a3, #9bbfe7);
+}
+
+.flag {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.stripe {
+  width: 100%;
+}
+
+.red {
+  background-color: #CE1126;
+  height: 50%;
+}
+
+.blue {
+  background-color: #002868;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+}
+</style>
